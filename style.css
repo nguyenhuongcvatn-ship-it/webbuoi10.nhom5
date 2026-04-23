@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box; /* tat ca phan tu dung box sizing */
+}
+
+body {
+  margin: 0; /* bo margin mac dinh */
+  font-family: 'Poppins', sans-serif; /* font chu */
+  background: #f5f5f5; /* mau nen */
+  color: #333; /* mau chu */
+}
+
+#layout {
+  max-width: 1200px; /* gioi han chieu rong */
+  margin: auto; /* can giua */
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bg.jpg") center/cover no-repeat; /* nen co anh */
+  width: 100vw; /* chieu rong full */
+  height: 400px; /* chieu cao header */
+  display: flex; /* dung flexbox */
+  flex-direction: column; /* sap xep theo cot */
+  justify-content: center; /* can giua theo chieu doc */
+  align-items: center; /* can giua theo chieu ngang */
+  color: white; /* mau chu trang */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6); /* do bong chu */
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px; /* kich thuoc chu lon */
+}
+
+header h1 a {
+  color: white; /* mau chu trang */
+  text-decoration: none; /* bo gach chan */
+}
+
+.brown-bar {
+  background: #5a2e1f; /* mau nau */
+  height: 50px; /* chieu cao */
+  width: 100%; /* full chieu rong */
+}
+
+.menu-categories {
+  display: flex; /* dung flexbox */
+  justify-content: center; /* can giua */
+  flex-wrap: wrap; /* xuong dong neu tran */
+  gap: 40px; /* khoang cach giua cac item */
+  margin: 40px 0;
+}
+
+.menu-item {
+  text-align: center; /* can giua chu */
+  width: 150px;
+  transition: transform 0.3s; /* hieu ung hover */
+}
+
+.menu-item a {
+  text-decoration: none; /* bo gach chan */
+  color: #333;
+}
+
+.menu-img {
+  width: 150px;
+  height: 150px;
+  background-size: cover; /* anh phu kin */
+  background-position: center; /* can giua anh */
+  border-radius: 50%; /* bo tron */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* bong do */
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* hieu ung hover */
+}
+
+.menu-item p {
+  font-weight: bold; /* chu dam */
+}
+
+main {
+  padding: 30px; /* khoang cach trong */
+}
+
+h2 {
+  border-left: 5px solid #c97b36; /* gach mau cam ben trai */
+  padding-left: 10px;
+}
+
+.grid {
+  display: grid; /* dung grid */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* chia cot tu dong */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px; /* bo tron goc */
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* bong do */
+  transition: 0.3s;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.product:hover {
+  transform: translateY(-8px); /* hieu ung hover */
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* anh phu kin khung */
+}
+
+.product p {
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: red; /* mau chu do */
+}
+
+.btn-message {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #5a2e1f; /* mau nen nut */
+  color: #fff; /* mau chu trang */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-message:hover {
+  background: #c97b36; /* doi mau khi hover */
+}
+
+.section-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.section-heading h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-heading .underline {
+  width: 80px;
+  height: 4px;
+  background: #5a2e1f;
+  margin: 0 auto;
+}
+
+footer {
+  background: #5a2e1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* them css cho trang chi tiet san pham */
+.detail {
+  display: flex; /* dung flexbox de dat anh va thong tin ngang */
+  align-items: flex-start; /* can tren */
+  gap: 20px; /* khoang cach giua anh va thong tin */
+}
+
+.detail img {
+  width: 300px; /* chieu rong anh */
+  height: auto;
+  border-radius: 10px; /* bo tron goc anh */
+}
+
+.detail-info {
+  flex: 1; /* chiem phan con lai ben phai */
+}
+* {
+  box-sizing: border-box; /* tat ca phan tu dung box sizing */
+}
+
+body {
+  margin: 0; /* bo margin mac dinh */
+  font-family: 'Poppins', sans-serif; /* font chu */
+  background: #f5f5f5; /* mau nen */
+  color: #333; /* mau chu */
+}
+
+#layout {
+  max-width: 1200px; /* gioi han chieu rong */
+  margin: auto; /* can giua */
+}
+
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/bg.jpg") center/cover no-repeat; /* nen co anh */
+  width: 100vw; /* chieu rong full */
+  height: 400px; /* chieu cao header */
+  display: flex; /* dung flexbox */
+  flex-direction: column; /* sap xep theo cot */
+  justify-content: center; /* can giua theo chieu doc */
+  align-items: center; /* can giua theo chieu ngang */
+  color: white; /* mau chu trang */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6); /* do bong chu */
+  margin: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px; /* kich thuoc chu lon */
+}
+
+header h1 a {
+  color: white; /* mau chu trang */
+  text-decoration: none; /* bo gach chan */
+}
+
+.brown-bar {
+  background: #5a2e1f; /* mau nau */
+  height: 50px; /* chieu cao */
+  width: 100%; /* full chieu rong */
+}
+
+.menu-categories {
+  display: flex; /* dung flexbox */
+  justify-content: center; /* can giua */
+  flex-wrap: wrap; /* xuong dong neu tran */
+  gap: 40px; /* khoang cach giua cac item */
+  margin: 40px 0;
+}
+
+.menu-item {
+  text-align: center; /* can giua chu */
+  width: 150px;
+  transition: transform 0.3s; /* hieu ung hover */
+}
+
+.menu-item a {
+  text-decoration: none; /* bo gach chan */
+  color: #333;
+}
+
+.menu-img {
+  width: 150px;
+  height: 150px;
+  background-size: cover; /* anh phu kin */
+  background-position: center; /* can giua anh */
+  border-radius: 50%; /* bo tron */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* bong do */
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* hieu ung hover */
+}
+
+.menu-item p {
+  font-weight: bold; /* chu dam */
+}
+
+main {
+  padding: 30px; /* khoang cach trong */
+}
+
+h2 {
+  border-left: 5px solid #c97b36; /* gach mau cam ben trai */
+  padding-left: 10px;
+}
+
+.grid {
+  display: grid; /* dung grid */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* chia cot tu dong */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 10px; /* bo tron goc */
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* bong do */
+  transition: 0.3s;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.product:hover {
+  transform: translateY(-8px); /* hieu ung hover */
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* anh phu kin khung */
+}
+
+.product p {
+  margin: 8px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: red; /* mau chu do */
+}
+
+.btn-message {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #5a2e1f; /* mau nen nut */
+  color: #fff; /* mau chu trang */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.btn-message:hover {
+  background: #c97b36; /* doi mau khi hover */
+}
+
+.section-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.section-heading h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-heading .underline {
+  width: 80px;
+  height: 4px;
+  background: #5a2e1f;
+  margin: 0 auto;
+}
+
+footer {
+  background: #5a2e1f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* them css cho trang chi tiet san pham */
+.detail {
+  display: flex; /* dung flexbox de dat anh va thong tin ngang */
+  align-items: flex-start; /* can tren */
+  gap: 20px; /* khoang cach giua anh va thong tin */
+}
+
+.detail img {
+  width: 300px; /* chieu rong anh */
+  height: auto;
+  border-radius: 10px; /* bo tron goc anh */
+}
+
+.detail-info {
+  flex: 1; /* chiem phan con lai ben phai */
+}
